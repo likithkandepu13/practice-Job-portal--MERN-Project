@@ -1,0 +1,11 @@
+const recruitercontroller = require("../controllers/recruitercontroller");
+
+const express = require("express");
+const recruiterrouter = express.Router();
+
+//recruiter routes
+
+recruiterrouter.post("/checkrecruiterlogin", recruitercontroller.checkrecruiterlogin);
+
+
+module.exports = recruiterrouter
